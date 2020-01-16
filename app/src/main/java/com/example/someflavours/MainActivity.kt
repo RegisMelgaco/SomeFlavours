@@ -1,0 +1,18 @@
+package com.example.someflavours
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Toast
+
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val s = "Disconto de " + Test.discount
+
+        Toast.makeText(applicationContext, s, Toast.LENGTH_LONG).show()
+    }
+}
